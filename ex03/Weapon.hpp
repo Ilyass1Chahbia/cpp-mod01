@@ -1,22 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Weapon.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ilchahbi <ilchahbi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/22 11:13:31 by ilchahbi          #+#    #+#             */
-/*   Updated: 2025/01/22 15:36:47 by ilchahbi         ###   ########.fr       */
+/*   Created: 2025/01/24 11:24:10 by ilchahbi          #+#    #+#             */
+/*   Updated: 2025/01/24 12:46:34 by ilchahbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#ifndef	WEAPON_HPP
+# define WEAPON_HPP
 
-int main()
+#include <iostream>
+
+class Weapon
 {
-    Zombie *z = newZombie("GRAAHH");
-    z->announce();
-    delete(z);
-    
-    randomChump("BRAAHH");
-}
+private:
+    std::string type;
+
+public:
+    Weapon(const std::string& weaponType);
+    std::string& getType();
+    void setType(const std::string& newType);
+};
+
+#endif

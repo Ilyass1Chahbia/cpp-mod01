@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ilchahbi <ilchahbi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/22 11:13:31 by ilchahbi          #+#    #+#             */
-/*   Updated: 2025/01/22 15:36:47 by ilchahbi         ###   ########.fr       */
+/*   Created: 2025/01/23 12:41:49 by ilchahbi          #+#    #+#             */
+/*   Updated: 2025/01/24 10:26:59 by ilchahbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,22 @@
 
 int main()
 {
-    Zombie *z = newZombie("GRAAHH");
-    z->announce();
-    delete(z);
-    
-    randomChump("BRAAHH");
+    int N = 5;
+    std::string name = "Zed";
+
+    Zombie* horde = zombieHorde(N, name);
+
+    if (horde)
+    {
+        for (int i = 0; i < N; ++i)
+        {
+            horde[i].announce();
+        }
+        delete[] horde;
+    } else
+    {
+        std::cerr << "Failed to create zombie horde." << std::endl;
+    }
+
+    return 0;
 }
