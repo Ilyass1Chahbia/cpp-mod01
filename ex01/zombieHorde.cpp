@@ -6,7 +6,7 @@
 /*   By: ilchahbi <ilchahbi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/23 12:42:39 by ilchahbi          #+#    #+#             */
-/*   Updated: 2025/01/24 12:04:01 by ilchahbi         ###   ########.fr       */
+/*   Updated: 2025/01/31 15:48:03 by ilchahbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,9 @@ Zombie* zombieHorde(int N, std::string name)
  	}
 	int		j = 0;
 	Zombie *z;
-	z = new Zombie[N];
+	z = new(std::nothrow) Zombie[N];
+	if (!z)
+		return (NULL);
 	while (j < N)
 	{
 		z[j].setname(name);

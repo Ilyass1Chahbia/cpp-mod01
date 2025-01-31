@@ -6,7 +6,7 @@
 /*   By: ilchahbi <ilchahbi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/25 15:40:00 by ilchahbi          #+#    #+#             */
-/*   Updated: 2025/01/25 15:42:08 by ilchahbi         ###   ########.fr       */
+/*   Updated: 2025/01/31 17:06:45 by ilchahbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,10 +42,37 @@ void    Harl::complain(std::string level)
 	{
 		if (level == array[n])
 		{
+			switch (n)
+			{
+				case 0:
+					for (int i = n; i < 4; i++)
+					{
+						(this->*fptr[i])();
+					}
+					break;
+				case 1:
+					for (int i = n; i < 4; i++)
+					{
+						(this->*fptr[i])();
+					}
+					break;
+				case 2:
+					for (int i = n; i < 4; i++)
+					{
+						(this->*fptr[i])();
+					}
+					break;
+				case 3:
+					for (int i = n; i < 4; i++)
+					{
+						(this->*fptr[i])();
+					}
+					break;
+			}
 			(this->*fptr[n])();
 			return;
 		}
         n++;
 	}
-	std::cout << "Wrong Command" << std::endl;
+	std::cout << "Probably complaining about insignificant problems" << std::endl;
 }

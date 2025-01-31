@@ -6,7 +6,7 @@
 /*   By: ilchahbi <ilchahbi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/24 11:27:25 by ilchahbi          #+#    #+#             */
-/*   Updated: 2025/01/24 17:33:21 by ilchahbi         ###   ########.fr       */
+/*   Updated: 2025/01/31 16:27:20 by ilchahbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ private:
 public:
     HumanA(const std::string& humanName, Weapon& humanWeapon);
     void attack();
+    ~HumanA();
 };
 
 #endif

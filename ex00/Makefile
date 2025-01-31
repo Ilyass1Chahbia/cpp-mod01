@@ -6,7 +6,7 @@
 #    By: ilchahbi <ilchahbi@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/01/22 12:00:20 by ilchahbi          #+#    #+#              #
-#    Updated: 2025/01/22 15:29:36 by ilchahbi         ###   ########.fr        #
+#    Updated: 2025/01/31 12:04:39 by ilchahbi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME = Zombie
 
 CC = c++
 
-CFLAGS = -Wall -Wextra -Werror -fsanitize=address -g
+CFLAGS = -Wall -Wextra -Werror -std=c++98
 
 SOURCES = Zombie.cpp main.cpp newZombie.cpp randomChump.cpp
 
@@ -29,7 +29,7 @@ $(NAME): $(OBJ)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	@rm -rf $(OBJ)
+	@rm -rf $(OBJ)	
 
 fclean: clean
 	@rm -rf $(NAME)

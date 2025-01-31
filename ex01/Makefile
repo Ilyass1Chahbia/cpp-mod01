@@ -6,7 +6,7 @@
 #    By: ilchahbi <ilchahbi@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/01/23 12:41:08 by ilchahbi          #+#    #+#              #
-#    Updated: 2025/01/24 10:31:09 by ilchahbi         ###   ########.fr        #
+#    Updated: 2025/01/31 12:27:01 by ilchahbi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME = Zombies
 
 CC = c++
 
-CFLAGS = -Wall -Wextra -Werror -fsanitize=address -g
+CFLAGS = -Wall -Wextra -Werror -std=c++98
 
 SOURCES = Zombie.cpp main.cpp zombieHorde.cpp
 

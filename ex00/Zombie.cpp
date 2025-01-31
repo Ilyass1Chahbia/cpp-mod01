@@ -6,7 +6,7 @@
 /*   By: ilchahbi <ilchahbi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/22 11:16:02 by ilchahbi          #+#    #+#             */
-/*   Updated: 2025/01/23 12:59:48 by ilchahbi         ###   ########.fr       */
+/*   Updated: 2025/01/31 15:42:14 by ilchahbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,10 @@ Zombie::Zombie()
 Zombie::Zombie(std::string input)
 {
     name = input;
+}
+Zombie::~Zombie()
+{
+    std::cout << "the destructor called on " << this->name << "\n";
 }
 
 void    Zombie::announce()

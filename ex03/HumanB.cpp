@@ -6,7 +6,7 @@
 /*   By: ilchahbi <ilchahbi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/24 11:27:22 by ilchahbi          #+#    #+#             */
-/*   Updated: 2025/01/24 12:42:08 by ilchahbi         ###   ########.fr       */
+/*   Updated: 2025/01/31 16:28:07 by ilchahbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,4 +31,9 @@ void    HumanB::setWeapon(Weapon& newWeapon)
 
 HumanB::HumanB(const std::string& humanName) : name(humanName), weapon(NULL)
 {
+}
+
+HumanB::~HumanB()
+{
+    std::cout << this->name << " has been destroyed" << std::endl;
 }

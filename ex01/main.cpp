@@ -6,7 +6,7 @@
 /*   By: ilchahbi <ilchahbi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/23 12:41:49 by ilchahbi          #+#    #+#             */
-/*   Updated: 2025/01/24 10:26:59 by ilchahbi         ###   ########.fr       */
+/*   Updated: 2025/01/31 12:29:43 by ilchahbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,8 @@ int main()
             horde[i].announce();
         }
         delete[] horde;
-    } else
+    }
+    else
     {
         std::cerr << "Failed to create zombie horde." << std::endl;
     }

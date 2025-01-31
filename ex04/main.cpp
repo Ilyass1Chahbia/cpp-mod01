@@ -6,7 +6,7 @@
 /*   By: ilchahbi <ilchahbi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/24 17:35:18 by ilchahbi          #+#    #+#             */
-/*   Updated: 2025/01/25 14:22:20 by ilchahbi         ###   ########.fr       */
+/*   Updated: 2025/01/31 12:40:11 by ilchahbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,13 @@
 
 void replaceInFile(const std::string& filename, const std::string& s1, const std::string& s2)
 {
-    std::ifstream inputFile(filename);
+    std::ifstream inputFile(filename.c_str()); 
     
     if (!inputFile) {
         std::cerr << "Error opening file: " << filename << std::endl;
         return;
     }
-    std::ofstream outputFile(filename + ".replace");
+    std::ofstream outputFile((filename + ".replace").c_str());
     if (!outputFile) {
         std::cerr << "Error creating file: " << filename << ".replace" << std::endl;
         return;

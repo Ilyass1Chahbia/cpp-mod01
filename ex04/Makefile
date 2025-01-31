@@ -6,7 +6,7 @@
 #    By: ilchahbi <ilchahbi@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/01/24 17:35:11 by ilchahbi          #+#    #+#              #
-#    Updated: 2025/01/25 14:11:56 by ilchahbi         ###   ########.fr        #
+#    Updated: 2025/01/31 12:37:17 by ilchahbi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME = rep_file
 
 CC = c++
 
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -std=c++98
 
 
 SOURCES = main.cpp

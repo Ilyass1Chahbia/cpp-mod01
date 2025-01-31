@@ -6,7 +6,7 @@
 #    By: ilchahbi <ilchahbi@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/01/24 11:23:17 by ilchahbi          #+#    #+#              #
-#    Updated: 2025/01/24 12:48:22 by ilchahbi         ###   ########.fr        #
+#    Updated: 2025/01/31 12:34:45 by ilchahbi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME = Combat
 
 CC = c++
 
-CFLAGS = -Wall -Wextra -Werror -fsanitize=address -g
+CFLAGS = -Wall -Wextra -Werror -std=c++98
 
 SOURCES = HumanA.cpp HumanB.cpp main.cpp Weapon.cpp
 
